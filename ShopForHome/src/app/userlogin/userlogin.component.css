@@ -1,0 +1,84 @@
+.card{
+    border: none;
+    width:500px;
+    padding: 40px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transform: hsla(205,46%,  30%,1);
+    background: linear-gradient(90deg,hsla(205,46%,  30%,1),hsla(260,29%,36%,1)100%);
+}
+.card h1 ,h6{
+ color:#fff;
+}
+label{
+    color:#fff;
+}
+
+.heading{
+    font-family: 'Edu QLD Beginner';
+    font-size: 30px;
+
+}
+
+.box{
+    width: 600px;
+    height: 340px;
+    top:70%;
+    left:30%;
+    /* background: linear-gradient(90deg,rgb(18, 18, 19),rgb(97, 95, 95)100%); */
+     background-color: rgb(54, 53, 53); 
+    color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+::ng-deep .mat-form-field-label{
+    color:white !important;
+    font-family: 'Edu QLD Beginner';
+}
+
+::ng-deep.mat-form-field-ripple {  
+    background-color: seashell !important; 
+    }
+
+    .text1{
+        color: white;
+        font-family: 'Edu QLD Beginner';
+    }  
+
+
+.login{
+    margin: 40px 20px;
+    padding: 20px 2px;
+}
+
+.test:hover{
+    background-color: black;
+    color: white;
+}
+
+.register1{
+    color: black;
+    border-color: black;
+}
+
+.mat-button, .mat-raised-button{
+    background-color:rgb(20, 19, 19);
+    color: white;
+    border-color: black;
+} 
+.mat-raised-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.submit{
+    background-color: white;
+    color: black;
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+}

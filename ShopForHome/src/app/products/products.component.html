@@ -1,0 +1,101 @@
+<!-- Displaying the All the products -->
+<div class="card-top container-fluid back">
+    <div class="container d-flex">
+
+        <div class="item">
+            <a (click)="filter('')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://th.bing.com/th/id/OIP.wVLU_eKVN-B81NTp9CPT3QHaEc?pid=ImgDet&rs=1" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+
+        <!--  home icon -->
+        <div class="item">
+            <a (click)="filter('Sofa')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://ii1.pepperfry.com/media/catalog/product/n/i/568x284/niki-sofa-set-in-sea-green-colour-by-febonic-niki-sofa-set-in-sea-green-colour-by-febonic-1zlmun.jpg"
+                    alt="">
+                <h6>Sofa </h6>
+            </a>
+        </div>
+        <!--  grocery Icon -->
+        <div class="item">
+            <a (click)="filter('Beds')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://ii3.pepperfry.com/media/catalog/product/s/o/494x544/solid-wood-queen-size-bed-in-provincial-teak-finish-by-woodsworth-solid-wood-queen-size-bed-in-provi-2gxdwk.jpg"
+                    alt="">
+                <h6> Beds  </h6>
+            </a>
+        </div>
+        <!--Mobile Icon -->
+        <div class="item">
+            <a (click)="filter('Storage')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://ii2.pepperfry.com/media/wysiwyg/banners/Web_Storage_LivingRoomStorageSolutions_Row1_2_2x_29042022.jpg"
+                    alt="">
+                <h6>Storage </h6>
+            </a>
+        </div>
+        <!-- Fashion Icon -->
+        <div class="item">
+            <a (click)="filter('Dinning')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://ii3.pepperfry.com/media/wysiwyg/banners/Dining_trend_web_20122021_2.jpg"
+                    alt="">
+                <h6> Dinning </h6>
+            </a>
+        </div>
+        <!--  Beauty Icon -->
+        <div class="item">
+            <a (click)="filter('Decor')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://ii2.pepperfry.com/media/wysiwyg/banners/Decor_Collection_WEB_3_2x.jpg"
+                    alt="">
+                <h6> Decor </h6>
+            </a>
+        </div>
+        <!--  Appliances Icon -->
+        <div class="item">
+            <a (click)="filter('Appliances')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://th.bing.com/th/id/OIP.-Gs7xxXxJ6-zkkefB8yNJAHaFj?w=233&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                    alt="">
+                <h6> Appliances </h6>
+            </a>
+        </div>
+
+        <!--  Sports Icon -->
+        <div class="item">
+            <a (click)="filter('Lighting')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://ii1.pepperfry.com/media/wysiwyg/banners/Lighting_Trend_Section_WEB_3_2x_28012021.jpg"
+                    alt="">
+                <h6> Lamps and Lighting </h6>
+            </a>
+        </div>
+        <!--  Electronics Icon -->
+        <div class="item">
+            <a (click)="filter('Others')">
+                <img style="width:100px;margin-top: 12px;"
+                    src="https://ii2.pepperfry.com/media/wysiwyg/banners/Homegarden_trends_web_24122021_1.jpg" alt="">
+                <h6> Others</h6>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <ng-container *ngFor="let product of filterCategory | filter:searchKey:'pname'">
+                <div class="card col-md-3">
+                    <img class="card-img-top" src='{{product.url}}'>
+                    <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">
+                        {{product.pname}}</h5>
+                    <p><strong>Price: </strong>{{product.price}}</p>
+                    <button class="btn btn-dark down" (click)="addtocart(product)"  >Add to Cart</button><br>
+                    <button class="btn btn-dark down" (click)="addtowishList(product)"  >Add to WishList</button>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

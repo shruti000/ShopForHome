@@ -1,0 +1,108 @@
+h2 {
+    color: rgb(19, 18, 19);
+     font-family: 'Edu QLD Beginner';
+    font-size: 40px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 2%;
+    color: rgb(15, 15, 15);
+    font-family: 'Edu QLD Beginner';
+    margin-top: -40px;
+}
+
+/*th{background-color:violet;}
+tr{background-color:khaki;} */
+
+table,
+th,
+td {
+    border: 3px solid black;
+    align-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 5px;
+}
+
+label {
+    color: #0f0f0f;
+    font-size: 20px;
+    font-family: 'Edu QLD Beginner';
+}
+
+.div-left {
+    float: left;
+    align-items: center;
+    background-color: aqua;
+    border-style: outset;
+    border-color: coral;
+    border-width: 7px;
+    border-radius: 30px;
+    width: 400px;
+    padding: 30px;
+    padding-left: 10px;
+    margin: 20px;
+}
+
+.div-right {
+    float: right;
+    align-items: center;
+    background-color: aqua;
+    border-style: outset;
+    border-color: coral;
+    border-width: 7px;
+    border-radius: 30px;
+    width: 400px;
+    padding: 18px;
+    padding-right: 10px;
+    margin: 20px;
+}
+
+.card {
+    align-items: center;
+    background-color: rgb(220, 247, 238);
+    border-style: outset;
+    border-width: 50px;
+    border-radius: 30px;
+    /* margin: 50px; */
+    width: 500px;
+    border: #fff;
+    margin: -50px 500px;
+    /* height: 200px; */
+
+}
+
+
+.action {
+    color: black;
+}
+
+.but {
+    color: rgb(255, 253, 253);
+    background-color: rgb(238, 15, 15);
+   border-color: black;
+}
+
+.but2 {
+    color: rgb(255, 253, 253);
+    background-color: green;
+   border-color: black;
+}
+
+.but:hover {
+    color: black;
+    background-color: white;
+}
+
+.but2:hover {
+    color: black;
+    background-color: white;
+}
+
+.bn:hover{
+    background-color: rgb(98, 175, 238);
+    color: black;
+}

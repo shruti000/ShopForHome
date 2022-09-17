@@ -1,0 +1,56 @@
+
+<ng-container *ngIf="products.length !=0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <!-- <th>Quantity</th> -->
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of products; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{product.pname }}</td>
+                            <td><img class="card-img-top wish" src='{{product.url}}' width="200px" heigth="200px"/>
+                            </td>
+                            <td>{{product.price | currency:'INR'}}</td>
+                            <td>{{product.category}}</td>
+                            <!-- <td style="width: 25%;">{{product.quantity}}
+                            </td> -->
+                            <td>
+                                <button (click)="removeItem(product)" class="btn btn-danger"><i
+                                        class="fas fa-trash-alt"></i></button>
+                            </td>
+
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+   
+</ng-container>
+
+<ng-container *ngIf="products.length==0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My WishList</h5>
+        </div>
+        <div class="center">
+            <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
+                alt="">
+            <h4>Your WishList is Empty!!</h4>
+            <h6>Ready to Save Your Products</h6>
+            <button routerLink="/products" class="btn btn-primary">Save To WishList</button>
+        </div>
+    </div>
+</ng-container>

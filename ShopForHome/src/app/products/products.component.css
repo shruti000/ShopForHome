@@ -1,0 +1,74 @@
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background:#fff ; 
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius:4em;
+}
+
+.item img{
+    width: 100px;
+    height : 100px ;
+    border: 3px solid rgb(15, 15, 15);
+    object-fit: cover;
+
+
+    }
+.item{
+    margin:0px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item a:hover{
+    color: rgb(58, 151, 74);
+}
+.card{
+    padding: 20px;
+    margin: 50px;
+}
+.card img{
+    width:230px;
+    height:230px;
+    margin-bottom:15px;
+    margin-left: 23px;
+  transition: 0.3s ease-in-out;
+}
+.card img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.5);
+}
+/*.fa-heart{
+    color: red;
+    cursor: pointer;
+    padding:20px;
+}*/
+
+.back{
+    /* background-image: url("https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8b25saW5lJTIwc2hvcHBpbmd8ZW58MHx8MHx8&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size:100% 100%; */
+    /* background-size: 2000px 2000px; */
+    background-color:rgb(253, 253, 252);
+}
+
+h5{
+    /* color: red; */
+    text-align: center;
+    font-family: 'Edu QLD Beginner';
+    font-weight: bold;
+}
+
+.down{
+    border-radius: 7px;
+    font-family: 'Edu QLD Beginner';
+    text-align: center;
+    font-weight: bold;
+}
+.down:hover{
+    background-color: rgb(68, 67, 67);
+}
